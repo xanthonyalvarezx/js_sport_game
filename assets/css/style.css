@@ -1,15 +1,85 @@
+:root{
+
+    --reset-color: rgb(240, 234, 160);
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Bangers';
+     
+    
+    
+}
+body{
+    position: relative;
+    background-color:grey; 
+    background-image:url('../basketballfloor.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+    
+    h1{
+        font-size: 56px;
+        position: relative;
+        top: 350px;
+        transform:rotate(-35deg) ;
+        z-index: 10;
+        color: var(--reset-color);
+    }
+
+
+#reset-container{
+    position: relative;
+    top:150px;
+    z-index: 9;
+    color: var(--reset-color);
+}
+       
+        
+    
+
+   
+    
+    
+   
+    .ball{
+        position: relative;
+        z-index: 8;
+        top: 490px;
+        left:889px;
+        font-size: 110px;
+    }
+
+
 .hide {
     display: none;
 }
 .left {
     float: left;
+    color: blue;
+    position: relative;
+    bottom: 150px;
+    left: 20px;
 }
 .right {
     float: right;
+    color: red;
+    position: relative;
+    bottom: 150px;
+    right: 20px;
 }
 .clear {
     clear: both;
+   
 }
 #reset-container, h1 {
     text-align: center;
+    
+    
 }
