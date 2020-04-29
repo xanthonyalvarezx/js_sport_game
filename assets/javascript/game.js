@@ -5,6 +5,14 @@ shotsOne.addEventListener('click', function(){
 
     let teamOneNum = parseInt(teamOneShots.innerText) + 1
     teamOneShots.innerText = teamOneNum
+
+let tmOneGoals = document.querySelector('#teamone-numgoals')
+let tmOneScore = parseInt(tmOneGoals.innerText) + Math.floor(Math.random() * 2)
+tmOneGoals.innerText = tmOneScore
+
+ 
+    
+
 })
 
 
@@ -15,6 +23,11 @@ shotsTwo.addEventListener('click', function(){
 
    let teamTwoNum = parseInt(teamTwoShots.innerText) + 1
    teamTwoShots.innerText = teamTwoNum
+
+   let tmTwoGoals = document.querySelector('#teamtwo-numgoals')
+let tmTwoScore = parseInt(tmTwoGoals.innerText) + Math.floor(Math.random() * 2)
+tmTwoGoals.innerText = tmTwoScore
+
 })
 
 
@@ -24,6 +37,7 @@ reset.addEventListener('click', function(){
 let startOver = parseInt(resetNum.innerText) + 1
 resetNum.innerText = startOver
 })
+
 
 
 
