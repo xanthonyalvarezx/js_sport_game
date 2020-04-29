@@ -40,11 +40,11 @@ let startOver = parseInt(resetNum.innerText) + 1
 resetNum.innerText = startOver
 
 if (tmOneGoals.innerText > tmTwoGoals.innerText){
-    document.write('Team one wins!!!')
+    alert('Team one wins!!!')
 }
 
 else{
-    document.write('Team two wins!!!!')
+    alert('Team two wins!!!!')
 }
 
 teamOneShots.innerText = 0
