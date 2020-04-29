@@ -51,13 +51,12 @@ teamOneShots.innerText = 0
 tmOneGoals.innerText = 0
 teamTwoShots.innerText = 0
 tmTwoGoals.innerText = 0
-
-
-
-
-
-
 })
+
+let shot = new Audio()
+shot.src ='Back+Board.mp3'
+
+
 
 
 
