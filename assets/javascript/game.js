@@ -18,6 +18,15 @@ shotsTwo.addEventListener('click', function(){
 })
 
 
+let reset = document.querySelector('#reset-button')
+let resetNum = document.querySelector('#num-resets')
+reset.addEventListener('click', function(){
+let startOver = parseInt(resetNum.innerText) + 1
+resetNum.innerText = startOver
+})
+
+
+
 
 
 
