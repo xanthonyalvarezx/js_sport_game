@@ -1,85 +1,143 @@
-:root{
+:root {
 
     --reset-color: rgb(240, 234, 160);
 }
 
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Bangers';
-     
     
     
+
+
+
 }
-body{
-    position: relative;
-    background-color:grey; 
-    background-image:url('../basketballfloor.jpg');
-    background-size:100%;
+#page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 900px;
+    background-image: url('../basketballfloor.jpg');
+    background-size: 2000px;
     background-repeat: no-repeat;
+   
     
 }
 
 
 
 
-    
-    h1{
-        font-size: 56px;
-        position: relative;
-        top: 350px;
-        transform:rotate(-35deg) ;
-        z-index: 10;
-        color: var(--reset-color);
-    }
-
-
-#reset-container{
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
-    top:150px;
-    z-index: 9;
+    background-color: grey;
+   
+    
+    
+
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 2000px;
+    height: 600px;
+    
+    flex-wrap: wrap;
+    z-index: 11;
+    
+}
+
+
+
+
+
+h1 {
+    font-size: 50px;
+    position: relative;
+    top: 275px;
+    left:910px;
+    transform: rotate(-25deg);
     color: var(--reset-color);
 }
-       
-        
-    
 
-   
+
+#reset-container {
+    position: relative;
+    top: 175px;
+    left:750px;
+    z-index: 9;
+    color: var(--reset-color);
     
     
-   
-    .ball{
-        position: relative;
-        z-index: 8;
-        top: 490px;
-        left:889px;
-        font-size: 110px;
-    }
+}
+
+
+
+
+
+
+
+
+.ball {
+    position: relative;
+    z-index: 8;
+    top: 515px;
+    left: 938px;
+    font-size: 125px;
+}
 
 
 .hide {
     display: none;
 }
+
+#teams{
+    display: flex;
+    
+    width: 1875px;
+    height: 400px;
+    justify-content: flex-end;
+    
+}
+
 .left {
-    float: left;
+    width:1000px;
     color: blue;
-    position: relative;
-    bottom: 150px;
-    left: 20px;
+    padding: 20px;
+
+    
+    
 }
+
 .right {
-    float: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+   width:850px;
+   padding: 20px;
+    
     color: red;
-    position: relative;
-    bottom: 150px;
-    right: 20px;
-}
-.clear {
-    clear: both;
+   
    
 }
-#reset-container, h1 {
+
+.clear {
+    clear: both;
+
+}
+
+#reset-container,
+h1 {
     text-align: center;
-    
-    
+
+
 }

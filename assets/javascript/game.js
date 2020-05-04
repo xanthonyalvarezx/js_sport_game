@@ -41,6 +41,7 @@ reset.addEventListener('click', function () {
 
     if (tmOneGoals.innerText > tmTwoGoals.innerText) {
         alert('Team one wins!!!')
+    
     } else {
         alert('Team two wins!!!!')
     }
