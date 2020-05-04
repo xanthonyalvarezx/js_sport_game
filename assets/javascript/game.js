@@ -9,7 +9,7 @@ shotsOne.addEventListener('click', function () {
     teamOneShots.innerText = teamOneNum
 
 
-    let tmOneScore = parseInt(tmOneGoals.innerText) + Math.floor(Math.random() * 2)
+    let tmOneScore = parseInt(tmOneGoals.innerText) + Math.floor(Math.random() * 4)
     tmOneGoals.innerText = tmOneScore
 
 
@@ -27,7 +27,7 @@ shotsTwo.addEventListener('click', function () {
     let teamTwoNum = parseInt(teamTwoShots.innerText) + 1
     teamTwoShots.innerText = teamTwoNum
 
-    let tmTwoScore = parseInt(tmTwoGoals.innerText) + Math.floor(Math.random() * 2)
+    let tmTwoScore = parseInt(tmTwoGoals.innerText) + Math.floor(Math.random() * 4) 
     tmTwoGoals.innerText = tmTwoScore
 
 })
@@ -42,8 +42,10 @@ reset.addEventListener('click', function () {
     if (tmOneGoals.innerText > tmTwoGoals.innerText) {
         alert('Team one wins!!!')
     
-    } else {
-        alert('Team two wins!!!!')
+    } else if(tmOneGoals.innerText === tmTwoGoals.innerText)  {
+        alert('Tie!!!')
+    }
+        else { alert('Team two wins!!!')
     }
 
     teamOneShots.innerText = 0
