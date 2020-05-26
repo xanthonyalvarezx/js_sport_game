@@ -1,147 +1,181 @@
-:root {
-
-    --reset-color: rgb(240, 234, 160);
-}
-
-
-* {
+*{
     box-sizing: border-box;
-    font-family: 'Bangers';
-    
-    
-
-
-
+    font-family: font-family: 'Bangers';
 }
+
+body{
+    display: flex;
+    background-image: url(../basketballfloor.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: gray;
+    font-family: 'Bangers';
+     
+    justify-content: center;
+    align-items: center;
+    width: 970px;
+}
+
 #page-wrapper{
     display: flex;
-    flex-wrap: wrap;
-    
-    width: 100%;
-    height: 900px;
-    background-image: url('../basketballfloor.jpg');
-    background-size: 2000px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-   
-    
+
 }
 
-
-
-
-body {
+.right{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    justify-content: space-between;
     position: relative;
-    background-color: grey;
-    overflow: scroll;
     
-   
-    
-    
-
+    width: 500px;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 50px;
+    color: red;
+  
 }
 
-#content{
+.left{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     
-    width: 2000px;
-    height: 600px;
+    width: 500px;
+    margin-left: -20px;
+    flex-direction: column;
+    color: blue;
     
-    flex-wrap: wrap;
-    z-index: 11;
-   
-    
-}
 
-
-
-
-
-h1 {
-    font-size: 50px;
-    position: relative;
-    top: 275px;
-    left:910px;
-    transform: rotate(-25deg);
-    color: var(--reset-color);
-}
-
-
-#reset-container {
-    position: relative;
-    top: 175px;
-    left:750px;
-    z-index: 9;
-    color: var(--reset-color);
-    
-    
-}
-
-
-
-
-
-
-
-
-.ball {
-    position: relative;
-    z-index: 8;
-    top: 515px;
-    left: 938px;
-    font-size: 125px;
-}
-
-
-.hide {
-    display: none;
 }
 
 #teams{
     display: flex;
     
-    width: 1875px;
-    height: 400px;
-    justify-content: flex-end;
-    
-}
-
-.left {
-    width:1000px;
-    color: blue;
-    padding: 20px;
-
+    width: 940px;
+    height: 300px;
+    justify-content: center;
+    margin-top: -35px;
+    width:900px
     
     
 }
-
-.right {
+#reset-container{
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-   width:850px;
-   padding: 20px;
+    color: rgb(116, 110, 97);
     
-    color: red;
    
-   
+  
 }
 
-.clear {
-    clear: both;
-
+.ball{
+    position: relative ;
+    left: 445px;
+    top: 245px;
+    font-size: 62px;
 }
 
-#reset-container,
-h1 {
-    text-align: center;
-
-
+h1{
+    position: relative;
+    
+    width: fit-content;
+    left: 350px;
+    top: 250px;
+    transform: rotate(-35deg);
+    color:  rgb(246, 211, 121);
 }
+
+@media( max-width:1450px){
+    *{
+        box-sizing: border-box;
+        font-family: 'Bangers';
+    }
+    
+    body{
+        display: flex;
+        background-image: url(../basketballfloor.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: gray;
+        font-family: 'Bangers';
+         
+        justify-content: center;
+        align-items: center;
+        width: 970px;
+    }
+    
+    #page-wrapper{
+        display: flex;
+    
+    }
+    
+    .right{
+        display: flex;
+        position: relative;
+        
+        width: 600px;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: -100px;
+        margin-left: 100px;
+        color: red;
+      border: 1px solid blue;
+    }
+    
+    .left{
+        display: flex;
+        
+        width: 500px;
+        margin-left: -20px;
+        flex-direction: column;
+        color: blue;
+        
+        margin-right:50px;
+        
+        
+    
+    }
+    
+    #teams{
+        display: flex;
+        
+        width: 1450px;
+        height: 300px;
+        justify-content:flex-end ;
+        margin-top: -35px;
+       
+        
+
+    }
+    #reset-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(116, 110, 97);
+        border: 1px solid yellow;
+        margin-left: -10px;
+        width:1500px;
+        padding-left: 300px;
+    }
+
+    #reset{
+       
+    }
+    
+    .ball{
+        position: relative ;
+        left: 955px;
+        top: 355px;
+        font-size: 100px;
+    }
+    
+    h1{
+        position: relative;
+        
+        width: fit-content;
+        left: 815px;
+        top: 345px;
+        font-size: 56px;
+        transform: rotate(-35deg);
+        color:  rgb(246, 211, 121);
+    }
+
